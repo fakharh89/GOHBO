@@ -1,0 +1,381 @@
+{
+  "algorithms": [
+    "Original_HBO",
+    "GOHBO"
+  ],
+  "function_comparison": {
+    "F1": {
+      "Original_HBO": {
+        "best_fitness": 318.20944557593833,
+        "mean_fitness": 2655.596548800923,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 3068.8853644329474,
+        "mean_fitness": 6301.945606771208,
+        "success_rate": 0.0
+      }
+    },
+    "F2": {
+      "Original_HBO": {
+        "best_fitness": 7.704538927544492e+30,
+        "mean_fitness": 6.034615891660818e+33,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 1.4850673507005272e+33,
+        "mean_fitness": 5.068520120156338e+36,
+        "success_rate": 0.0
+      }
+    },
+    "F3": {
+      "Original_HBO": {
+        "best_fitness": 20288.3848261169,
+        "mean_fitness": 47177.76319292802,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 15606.44355660722,
+        "mean_fitness": 33694.3491944355,
+        "success_rate": 0.0
+      }
+    },
+    "F4": {
+      "Original_HBO": {
+        "best_fitness": 5181131082.218704,
+        "mean_fitness": 6864626408.175909,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 10736761563.062128,
+        "mean_fitness": 15007058908.256958,
+        "success_rate": 0.0
+      }
+    },
+    "F5": {
+      "Original_HBO": {
+        "best_fitness": 50802.340973017264,
+        "mean_fitness": 51050.07112552612,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 52343.54786332082,
+        "mean_fitness": 52941.575640850846,
+        "success_rate": 0.0
+      }
+    },
+    "F6": {
+      "Original_HBO": {
+        "best_fitness": 952.6862506299149,
+        "mean_fitness": 953.2481018738986,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 952.4334503340328,
+        "mean_fitness": 953.1318800447069,
+        "success_rate": 0.0
+      }
+    },
+    "F7": {
+      "Original_HBO": {
+        "best_fitness": 1352.2830594683278,
+        "mean_fitness": 1372.617077441106,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 1311.9780224969154,
+        "mean_fitness": 1313.906101555004,
+        "success_rate": 0.0
+      }
+    },
+    "F8": {
+      "Original_HBO": {
+        "best_fitness": 56516.318858152576,
+        "mean_fitness": 56658.22708688229,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 57942.0048588461,
+        "mean_fitness": 58515.93429873849,
+        "success_rate": 0.0
+      }
+    },
+    "F9": {
+      "Original_HBO": {
+        "best_fitness": 4745.013480249496,
+        "mean_fitness": 5758.221790753348,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 3661.8948127467024,
+        "mean_fitness": 3983.003236943863,
+        "success_rate": 0.0
+      }
+    },
+    "F10": {
+      "Original_HBO": {
+        "best_fitness": -3267.662409188425,
+        "mean_fitness": -683.1982853511284,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": -3044.2628817598006,
+        "mean_fitness": -1423.4780198022086,
+        "success_rate": 0.0
+      }
+    },
+    "F11": {
+      "Original_HBO": {
+        "best_fitness": 158913571546.40912,
+        "mean_fitness": 158913571546.40912,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 158913571546.40903,
+        "mean_fitness": 158913571546.40964,
+        "success_rate": 0.0
+      }
+    },
+    "F12": {
+      "Original_HBO": {
+        "best_fitness": 2214328511.059715,
+        "mean_fitness": 2214328511.0607395,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 2214328531.7009163,
+        "mean_fitness": 2214328570.9723234,
+        "success_rate": 0.0
+      }
+    },
+    "F13": {
+      "Original_HBO": {
+        "best_fitness": 1285.053126254795,
+        "mean_fitness": 1285.1937176527695,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 1285.1152325223406,
+        "mean_fitness": 1285.2146178124851,
+        "success_rate": 0.0
+      }
+    },
+    "F14": {
+      "Original_HBO": {
+        "best_fitness": 576.5531444694886,
+        "mean_fitness": 576.8966745512674,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 576.5872673497504,
+        "mean_fitness": 577.6101237742379,
+        "success_rate": 0.0
+      }
+    },
+    "F15": {
+      "Original_HBO": {
+        "best_fitness": 1297.015906119394,
+        "mean_fitness": 1297.0159061197373,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 1297.0159061240777,
+        "mean_fitness": 1297.0159062329587,
+        "success_rate": 0.0
+      }
+    },
+    "F16": {
+      "Original_HBO": {
+        "best_fitness": 1064.4884581049066,
+        "mean_fitness": 1064.802877902557,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 1064.999451806394,
+        "mean_fitness": 1065.16653571923,
+        "success_rate": 0.0
+      }
+    },
+    "F17": {
+      "Original_HBO": {
+        "best_fitness": 62018.01683811789,
+        "mean_fitness": 62018.0168381179,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 62018.017026682326,
+        "mean_fitness": 62018.0189318848,
+        "success_rate": 0.0
+      }
+    },
+    "F18": {
+      "Original_HBO": {
+        "best_fitness": 41357.07063609146,
+        "mean_fitness": 41357.07063662847,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 41357.23208133539,
+        "mean_fitness": 41534.78674350124,
+        "success_rate": 0.0
+      }
+    },
+    "F19": {
+      "Original_HBO": {
+        "best_fitness": 2745.8355897299134,
+        "mean_fitness": 2747.0385169155556,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 2746.796756123691,
+        "mean_fitness": 2747.787023306181,
+        "success_rate": 0.0
+      }
+    },
+    "F20": {
+      "Original_HBO": {
+        "best_fitness": 2503.439139140601,
+        "mean_fitness": 2524.8400074485303,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": 2503.45500025745,
+        "mean_fitness": 2516.1785295499644,
+        "success_rate": 0.0
+      }
+    },
+    "F21": {
+      "Original_HBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      }
+    },
+    "F22": {
+      "Original_HBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      }
+    },
+    "F23": {
+      "Original_HBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      }
+    },
+    "F24": {
+      "Original_HBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      }
+    },
+    "F25": {
+      "Original_HBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      }
+    },
+    "F26": {
+      "Original_HBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      }
+    },
+    "F27": {
+      "Original_HBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      }
+    },
+    "F28": {
+      "Original_HBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      }
+    },
+    "F29": {
+      "Original_HBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      }
+    },
+    "F30": {
+      "Original_HBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      },
+      "GOHBO": {
+        "best_fitness": Infinity,
+        "mean_fitness": Infinity,
+        "success_rate": 0.0
+      }
+    }
+  },
+  "overall_ranking": {
+    "Original_HBO": {
+      "average_success_rate": 0.0,
+      "functions_solved": 0,
+      "average_fitness": 3.017307945830409e+32
+    },
+    "GOHBO": {
+      "average_success_rate": 0.0,
+      "functions_solved": 0,
+      "average_fitness": 2.534260060078169e+35
+    }
+  },
+  "statistical_tests": {}
+}

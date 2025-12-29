@@ -1,0 +1,17 @@
+{
+  "download_date": "1764321070.6207414",
+  "data_directory": "benchmark_test_data",
+  "download_results": {
+    "downloads_attempted": 1,
+    "downloads_successful": 1,
+    "generated_files": 0,
+    "total_files": 0
+  },
+  "data_index": {
+    "rotation_matrices": [],
+    "shift_vectors": [],
+    "bias_values": [],
+    "function_data": {},
+    "dimensions_available": []
+  }
+}

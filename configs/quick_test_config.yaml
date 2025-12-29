@@ -1,0 +1,66 @@
+# Quick Test Configuration for Medical Image Classification Pipeline
+# ==================================================================
+# This configuration is optimized for quick testing and demonstration
+
+experiment:
+  name: "quick_test_medical_classification"
+  description: "Quick test configuration for pipeline validation"
+  version: "1.0.0"
+
+data:
+  input_directory: "./data/sample_images"
+  labels_file: "./data/sample_labels.csv"
+  output_directory: "./results/quick_test"
+  
+  validation_split: 0.3
+  test_split: 0.2
+  patient_level_split: true
+
+preprocessing:
+  target_size: [128, 128]  # Smaller for faster processing
+  normalization: "min_max"
+  quality_check: false  # Skip for speed
+  clahe_enabled: false
+  augmentation: false  # Disable for quick test
+
+model:
+  architecture: "custom_cnn"
+  input_shape: [128, 128, 3]
+  num_classes: 2
+  conv_blocks: 2  # Smaller model
+  base_filters: 32
+  dropout_rate: 0.2
+
+training:
+  epochs: 10  # Very few epochs for quick test
+  batch_size: 16
+  learning_rate: 0.01
+  early_stopping: false
+  class_weights: null
+
+optimization:
+  algorithm: "improved_hbo"
+  iterations: 20  # Quick optimization
+  population_size: 10
+  adaptive_params: false
+
+validation:
+  method: "k_fold"
+  folds: 3  # Fewer folds for speed
+  strategy: "standard"  # Simpler strategy
+
+evaluation:
+  clinical_metrics: true
+  statistical_tests: false  # Skip for speed
+  visualizations: false
+
+reporting:
+  generate_plots: false
+  clinical_assessment: true
+  detailed_report: true
+  summary_dashboard: false
+
+pipeline:
+  save_intermediate: false
+  verbose: true
+  use_gpu: false  # Use CPU for compatibility

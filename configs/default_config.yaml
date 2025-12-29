@@ -1,0 +1,157 @@
+# Default Configuration for Medical Image Classification Pipeline
+# =============================================================
+
+# Experiment metadata
+experiment:
+  name: "medical_classification_hbo"
+  description: "Medical image classification with Improved HBO optimization"
+  version: "1.0.0"
+  author: "Medical AI Research Team"
+
+# Data configuration
+data:
+  input_directory: "./data/medical_images"
+  labels_file: "./data/labels.csv"
+  output_directory: "./results"
+  
+  # Image settings
+  image_formats: [".png", ".jpg", ".jpeg", ".dcm", ".nii", ".tiff"]
+  
+  # Data splitting
+  validation_split: 0.2
+  test_split: 0.2
+  random_seed: 42
+  stratified_split: true
+  
+  # Medical-specific settings
+  patient_level_split: true
+  patient_id_column: "patient_id"
+  temporal_column: "acquisition_date"
+  severity_column: "severity"
+
+# Step 1: Preprocessing configuration
+preprocessing:
+  target_size: [224, 224]
+  normalization: "z_score"  # Options: "min_max", "z_score", "percentile"
+  
+  # Quality assessment
+  quality_check: true
+  quality_threshold: 0.3
+  
+  # Image enhancement
+  clahe_enabled: true
+  remove_artifacts: true
+  
+  # Data augmentation
+  augmentation: true
+  rotation_range: 15
+  zoom_range: 0.1
+  horizontal_flip: false  # Usually false for medical images
+  brightness_range: [0.9, 1.1]
+  noise_std: 2.0
+
+# Step 2: Model configuration
+model:
+  architecture: "custom_cnn"  # Options: "custom_cnn", "transfer_resnet50", "transfer_vgg16"
+  input_shape: [224, 224, 3]
+  num_classes: 2
+  
+  # CNN architecture parameters
+  conv_blocks: 4
+  base_filters: 64
+  filter_multiplier: 2.0
+  dropout_rate: 0.3
+  l2_regularization: 0.0001
+
+# Step 2: Training configuration
+training:
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.001
+  optimizer: "adam"  # Options: "adam", "sgd", "rmsprop"
+  
+  # Training strategies
+  early_stopping: true
+  patience: 10
+  reduce_lr_on_plateau: true
+  save_best_model: true
+  
+  # Class handling
+  class_weights: "balanced"  # Options: "balanced", null
+  validation_split: 0.0  # Use separate validation set from preprocessing
+
+# Step 3: HBO optimization configuration
+optimization:
+  algorithm: "improved_hbo"
+  iterations: 100
+  population_size: 30
+  degree: 3
+  adaptive_params: true
+  parallel: false
+  
+  # Optimization bounds (automatically set based on model config)
+  # conv_blocks: [2, 6]
+  # base_filters: [16, 128]
+  # filter_multiplier: [1.5, 3.0]
+  # dropout_rate: [0.0, 0.6]
+  # learning_rate: [1e-5, 1e-2]
+  # l2_regularization: [1e-6, 1e-3]
+
+# Step 4: Cross-validation configuration
+validation:
+  method: "k_fold"
+  folds: 5
+  strategy: "patient_level"  # Options: "patient_level", "stratified", "standard"
+  
+  # Metrics to calculate
+  metrics: ["accuracy", "precision", "recall", "f1", "auc", "sensitivity", "specificity"]
+  
+  # Statistical settings
+  random_state: 42
+  confidence_level: 0.95
+  statistical_test: "wilcoxon"
+
+# Step 5: Evaluation configuration
+evaluation:
+  clinical_metrics: true
+  statistical_tests: true
+  confidence_intervals: true
+  visualizations: true
+  
+  # Clinical thresholds
+  clinical_thresholds:
+    accuracy: 0.85
+    sensitivity: 0.90
+    specificity: 0.85
+    ppv: 0.80
+    npv: 0.85
+    auc: 0.90
+
+# Step 6: Reporting configuration
+reporting:
+  generate_plots: true
+  clinical_assessment: true
+  detailed_report: true
+  summary_dashboard: true
+  executive_summary: true
+  
+  # Report formats
+  formats: ["txt", "html", "json"]
+  include_visualizations: true
+  regulatory_compliance: true
+
+# Pipeline settings
+pipeline:
+  save_intermediate: true
+  resume_from_checkpoint: false
+  parallel_execution: false
+  verbose: true
+  
+  # Resource settings
+  use_gpu: true
+  n_workers: 4
+  memory_limit: "8GB"
+  
+  # Output settings
+  cleanup_intermediate: false
+  compress_results: false
