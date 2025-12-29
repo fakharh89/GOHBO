@@ -7,16 +7,16 @@
 
 Complete implementation of the research methodology from **"An Evolutionary Deep Learning Method Based on Improved Heap-Based Optimization for Medical Image Classification and Diagnosis"** following Zhang et al. 2024 GOHBO approach.
 
-## 🎯 Research Objectives Accomplished
+## Research Objectives Accomplished
 
-✅ **Step 1**: Original HBO algorithm implementation (Askari et al. 2020)  
-✅ **Step 2**: GOHBO construction with Grey Wolf and Orthogonal Learning  
-✅ **Step 3**: 30 benchmark functions testing (M_X_D30.txt format)  
-✅ **Step 4**: Scalability testing matching Zhang et al. 2024 results  
-✅ **Step 5**: ResNet-18 integration creating GOHBORESNET18 model  
-✅ **Step 6**: Evaluation on three medical datasets  
+- **Step 1**: Original HBO algorithm implementation (Askari et al. 2020)  
+- **Step 2**: GOHBO construction with Grey Wolf and Orthogonal Learning  
+- **Step 3**: 30 benchmark functions testing (M_X_D30.txt format)  
+- **Step 4**: Scalability testing matching Zhang et al. 2024 results  
+- **Step 5**: ResNet-18 integration creating GOHBORESNET18 model  
+- **Step 6**: Evaluation on three medical datasets  
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 final-code/
@@ -53,7 +53,7 @@ final-code/
 └── run_example.py                 # Quick demonstration
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Environment Setup
 
@@ -98,7 +98,7 @@ python evaluation/comprehensive_evaluation.py
 python cli.py run-pipeline --config configs/default_config.yaml
 ```
 
-## 🔬 Algorithm Implementation Details
+## Algorithm Implementation Details
 
 ### Original HBO Algorithm (Askari et al. 2020)
 - **File**: `algorithms/original_hbo.py`
@@ -119,7 +119,7 @@ python cli.py run-pipeline --config configs/default_config.yaml
 - **Hyperparameters**: Learning rate, batch size, dropout rate, epochs
 - **Medical Focus**: Specialized for medical image classification
 
-## 📊 Benchmark Testing (Step 3)
+## Benchmark Testing (Step 3)
 
 ### 30 Functions Test Suite
 The implementation includes all 30 benchmark functions matching Zhang et al. 2024 format:
@@ -146,7 +146,7 @@ python algorithms/run_30_functions_test.py
 python algorithms/run_30_functions_test.py --dimension 50 --runs 50
 ```
 
-## 🏥 Medical Dataset Integration (Step 6)
+## Medical Dataset Integration (Step 6)
 
 ### Supported Datasets
 1. **Colorectal Cancer**: Binary classification (benign/malignant)
@@ -173,7 +173,7 @@ X, y = MedicalImageSynthesizer.generate_brain_tumor_data(num_samples=1000)
 X, y = MedicalImageSynthesizer.generate_chest_xray_data(num_samples=1000)
 ```
 
-## 🎛️ Configuration and Customization
+## Configuration and Customization
 
 ### Algorithm Parameters
 
@@ -225,7 +225,7 @@ gohboresnet18 = GOHBORESNET18(
 )
 ```
 
-## 📈 Performance Analysis
+## Performance Analysis
 
 ### Benchmark Function Results
 Based on testing, GOHBO typically shows:
@@ -239,7 +239,7 @@ GOHBORESNET18 demonstrates:
 - **More stable convergence** across different datasets
 - **Better hyperparameter optimization** efficiency
 
-## 🔧 Extensibility
+## Extensibility
 
 ### Adding New Optimization Algorithms
 ```python
@@ -275,7 +275,7 @@ def custom_medical_metric(y_true, y_pred):
     return metric_value
 ```
 
-## 🧪 Testing and Validation
+## Testing and Validation
 
 ### Unit Tests
 ```bash
@@ -300,7 +300,7 @@ python algorithms/run_30_functions_test.py --test-subset
 python evaluation/comprehensive_evaluation.py
 ```
 
-## 📊 Results Interpretation
+## Results Interpretation
 
 ### Benchmark Function Results
 - **M_X_D30.txt files**: Individual function results with statistics
@@ -313,7 +313,7 @@ python evaluation/comprehensive_evaluation.py
 - **ROC curves**: Diagnostic performance assessment
 - **clinical grading**: Medical acceptability evaluation
 
-## 🤝 Contributing
+## Contributing
 
 1. **Fork** the repository
 2. **Create** feature branch: `git checkout -b feature-name`
@@ -321,7 +321,7 @@ python evaluation/comprehensive_evaluation.py
 4. **Test** with provided configurations: `python run_complete_research.py --quick`
 5. **Submit** pull request with detailed description
 
-## 📚 Research Citations
+## Research Citations
 
 If you use this implementation in your research, please cite:
 
@@ -341,18 +341,18 @@ If you use this implementation in your research, please cite:
 }
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Zhang et al.** for the GOHBO algorithm methodology
 - **Askari et al.** for the original HBO algorithm
 - **Medical imaging research community** for dataset insights
 - **Open-source optimization libraries** for implementation guidance
 
-## ⚠️ Important Notes
+## Important Notes
 
 ### For Research Use
 - **Validation**: All algorithms implemented according to published specifications
@@ -366,7 +366,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Regulatory Approval**: Obtain necessary regulatory approvals before clinical use
 - **Expert Oversight**: Medical professional oversight required for healthcare applications
 
-## 📞 Support
+## Support
 
 For technical questions or research collaboration:
 - **Issues**: Submit via GitHub issues
@@ -376,10 +376,10 @@ For technical questions or research collaboration:
 
 ---
 
-**🔬 Research Ready**: Complete implementation ready for academic research and development in medical AI and optimization algorithms.
+**Research Ready**: Complete implementation ready for academic research and development in medical AI and optimization algorithms.
 
-**📊 Production Quality**: Comprehensive testing, documentation, and validation following academic standards.
+**Production Quality**: Comprehensive testing, documentation, and validation following academic standards.
 
-**🎯 Zhang et al. 2024 Compliant**: Full implementation matching the research methodology and requirements.
+**Zhang et al. 2024 Compliant**: Full implementation matching the research methodology and requirements.
 
 *Last Updated: November 2024*
